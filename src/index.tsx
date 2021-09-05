@@ -16,6 +16,8 @@ export interface LoaderProps
     HTMLDivElement
   > {}
 
-export const Loader = ({ ...restProps }: LoaderProps) => {
+const Loader = ({ ...restProps }: LoaderProps) => {
   return <div className={styles.loader} {...restProps}></div>;
 };
+
+export default Loader;
