@@ -3,13 +3,25 @@
     linear,
     right top,
     left top,
-    from(#ffffff),
-    color-stop(#ececec),
-    color-stop(#ececec),
-    to(#ffffff)
+    from(var(--primaryColor)),
+    color-stop(var(--secondaryColor)),
+    color-stop(var(--secondaryColor)),
+    to(var(--primaryColor))
   );
-  background: -o-linear-gradient(right, #ffffff, #ececec, #ececec, #ffffff);
-  background: linear-gradient(-90deg, #ffffff, #ececec, #ececec, #ffffff);
+  background: -o-linear-gradient(
+    right,
+    var(--primaryColor),
+    var(--secondaryColor),
+    var(--secondaryColor),
+    var(--primaryColor)
+  );
+  background: linear-gradient(
+    -90deg,
+    var(--primaryColor),
+    var(--secondaryColor),
+    var(--secondaryColor),
+    var(--primaryColor)
+  );
   background-size: 400% 400%;
   -webkit-animation: gradient 5s ease infinite;
   animation: gradient 5s ease infinite;

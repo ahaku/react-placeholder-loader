@@ -32,3 +32,19 @@ const Card = ({ loading }) => {
   <>{loading ? <Loader width={100} height={100} /> : '...card content'}</>;
 };
 ```
+
+Passing color props
+
+```jsx
+import Loader from 'react-placeholder-loader';
+
+const Card = ({ loading }) => {
+  <div style={{ width: 100, height: 200 }}>
+    {loading ? (
+      <Loader primaryColor="#00203F" secondaryColor="#ADEFD1" />
+    ) : (
+      '...card content'
+    )}
+  </div>;
+};
+```

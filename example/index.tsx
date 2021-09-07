@@ -6,9 +6,16 @@ import Loader from '../.';
 const App = () => {
   return (
     <div
-      style={{ width: 100, height: 100, borderRadius: 8, overflow: 'hidden' }}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, 100px)',
+        height: 100,
+        gap: 20,
+      }}
     >
       <Loader />
+      <Loader primaryColor="#00203F" secondaryColor="#ADEFD1" />
+      <Loader primaryColor="#0063B2" secondaryColor="#9CC3D5" />
     </div>
   );
 };
